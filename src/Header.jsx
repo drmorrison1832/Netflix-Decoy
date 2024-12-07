@@ -1,5 +1,6 @@
 import netflix_logo from "./assets/netflix_logo.svg";
 import NavigationBar1 from "./NavigationBar1";
+import NavigationBar2 from "./NavigationBar2";
 
 function Head() {
   return (
@@ -8,7 +9,7 @@ function Head() {
         <img className="logo" alt="logo" src={netflix_logo} />
         <NavigationBar1 />
 
-        <div className="navigation_bar_2">loupe, cloche, avatar</div>
+        <NavigationBar2 />
       </div>
     </header>
   );

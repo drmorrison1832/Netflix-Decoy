@@ -11,6 +11,7 @@ function MainSection(props) {
             <div className="film">
               {/* <img src={`${props.content[0].images[0]}`} /> */}
             </div>
+            <div className="avatar_in_bar"></div>
           </div>
         </section>
       </div>
