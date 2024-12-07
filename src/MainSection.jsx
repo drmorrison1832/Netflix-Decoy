@@ -1,19 +1,27 @@
+import Category from "./Category.jsx";
+
 function MainSection(props) {
+  const movies = props.content;
   return (
     <main>
       <div className="container">
-        <section>
-          <p>{props.content[0].name}</p>
-
-          <div className="category">{props.content[0].category}</div>
-          <div className="films">
-            <div className="left-filler"></div>
-            <div className="film">
-              {/* <img src={`${props.content[0].images[0]}`} /> */}
-            </div>
-            <div className="avatar_in_bar"></div>
-          </div>
-        </section>
+        {movies.map((cat, indexCat) => {
+          return (
+            <section key={indexCat}>
+              <div className="category">{cat.category}</div>
+              <div className="films">
+                <div className="left-filler"></div>
+                {cat.images.map((film, indexFilm) => {
+                  return (
+                    <div key={indexFilm} className="film">
+                      <img src={film} />
+                    </div>
+                  );
+                })}
+              </div>
+            </section>
+          );
+        })}
       </div>
     </main>
   );
