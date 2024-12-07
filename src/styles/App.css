@@ -1,0 +1,91 @@
+.container {
+  margin: 0px 40px;
+}
+
+body {
+  color: white;
+  background: #141414;
+}
+
+header {
+  /* border: 1px solid white; */
+  height: 100px;
+  overflow: hidden;
+}
+
+header .container {
+  height: 100%;
+  /* ———— */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+header .logo {
+  height: 40px;
+}
+
+.navigation_bar_1 {
+  margin-left: 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-grow: 1;
+}
+
+/* .navigation_bar_2 {
+} */
+
+main {
+  min-height: 1500px;
+}
+
+main section {
+}
+
+.category {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.films {
+  margin-left: -40px;
+  margin-right: -40px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+
+.film {
+  background: grey;
+  flex: none;
+  width: calc(20% - 5 * 10px);
+}
+
+.film img {
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  object-position: bottom;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.left-filler {
+  flex: none;
+  width: 30px;
+}
+
+footer .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.pdp {
+  width: 50%;
+  /* border: 1px solid white; */
+}
