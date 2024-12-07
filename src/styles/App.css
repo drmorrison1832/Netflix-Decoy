@@ -5,7 +5,7 @@ html {
 }
 
 .container {
-  margin: 0px 40px;
+  margin: 0px 4.5dvw 0px 40px;
 }
 
 body {
@@ -14,36 +14,56 @@ body {
 }
 
 header {
-  /* border: 1px solid white; */
-  height: 100px;
+  position: fixed;
+  top: 0;
+  height: 5dvw;
   overflow: hidden;
+  background: #141414;
+  width: 100%;
 }
 
 header .container {
   height: 100%;
-  /* ———— */
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
 header .logo {
-  height: 40px;
+  /* height: 40px; */
+  height: 3dvw;
+}
+
+header .logo:hover {
+  cursor: pointer;
 }
 
 .navigation_bar_1 {
-  margin-left: 40px;
+  font-size: 1.2dvw;
+  font-weight: 500;
+  /* margin-left: 40px; */
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  justify-content: center;
+  gap: 1dvw;
   flex-grow: 1;
 }
 
+.navigation_button:hover {
+  opacity: 60%;
+  cursor: pointer;
+}
+
 .navigation_bar_2 {
-  height: 40px;
+  /* height: 40px; */
+  height: 2.5dvw;
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: 1dvw;
+}
+
+.navigation_bar_2 > :hover {
+  cursor: pointer;
 }
 
 .avatar_in_bar {
@@ -51,59 +71,55 @@ header .logo {
   min-height: 100%;
   aspect-ratio: 1;
   border-radius: 5px;
-  margin-right: -20px;
+  margin-right: -1dvw;
 }
 
 main {
-  min-height: 1500px;
-}
-
-main section {
+  margin-top: 8dvw;
 }
 
 .category {
-  font-size: 24px;
+  font-size: 1.5vw;
   font-weight: 600;
-  margin-top: 50px;
-  margin-bottom: 10px;
+  margin-top: 1.75dvw;
+  margin-bottom: 0.35dvw;
 }
 
-.films {
+.films-carroussel {
   margin-left: -40px;
-  margin-right: -40px;
+  margin-right: -4.5dvw;
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 0.35dvw;
   overflow-x: scroll;
   scrollbar-width: none;
 }
 
-.film {
-  /* background: grey; */
+.film-image {
   flex: none;
-  width: calc(20% - 5 * 10px);
+  width: calc(20% - (5 * 0.35dvw));
 }
 
-.film img {
+.film-image img {
   aspect-ratio: 16/9;
   object-fit: cover;
   object-position: bottom;
   width: 100%;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 .left-filler {
   flex: none;
-  width: 30px;
+  width: 40px;
 }
 
 footer .container {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-top: 5dvw;
 }
 
 .pdp {
   width: 50%;
-  /* border: 1px solid white; */
 }
